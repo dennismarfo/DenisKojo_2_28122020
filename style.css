@@ -47,6 +47,10 @@ h3{
 
 .header .top-nav .nav{
     display: flex;
+    position: relative;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 ul{
