@@ -1,20 +1,49 @@
 
 body{
-    margin: 0 ;
-    padding: 0;  
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 8px 0 0;
+    
+}
+
+h1{
+    font-weight: 600;
+    font-size: 21px;
+}
+
+h3{
+    font-weight: 200;
+}
+
+.fa-info{
+    color: #0065FC;
+    padding: 4px 9px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+.top-content h4{
+    margin: 0;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+
+#grey-star{
+    color: #F2F2F2;
+}
+
+.content{
+    margin: 0 3%;
 }
 
 .header{
+    margin: 0 3%;
     background-color:white;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
     height: 66px;
     display: flex;
     justify-content: space-between;
-
-
-
-
 
 }
 
@@ -22,17 +51,21 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-content: center;
 
 }
 
 .nav{
     display: flex;
+    position: relative;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
 #logo{
-    width: 9%;
-    margin-left: 26px;
+    width: 111px%;
     display:inline-block;
 
 }
@@ -53,15 +86,14 @@ body{
     color: #0065FC;
     display:inline-block;
     border-top: 1px solid #0065FC;
-    padding-top: 20px;
+    padding-top: 19px;
 }
 
 .register{
     font-weight: bold;
     text-decoration: none;
     color: #0065FC;
-    margin-right: 26px;
-    padding:20px;
+    padding:20px 0 20px 20px;
 }
 
 footer{
@@ -71,19 +103,21 @@ footer{
     display: flex;
     justify-content: flex-start;
     text-align: justify;
+    margin: 0px;
 
 }
 
 
 .footer-1{
     text-align: justify;
-    padding-right: 20%;
+    padding-right: 30px;
+    flex: 1 1 auto;
 }
 
 .footer-1 li{
     display: flex;
     justify-content: justify;
-    height: 40px;
+    height: 33px;
 }
 
 
@@ -96,21 +130,367 @@ footer{
     color: #4d4d4d;
 }
 
+.foot-title{
+    margin-bottom: 10px;
+}
+
+.search-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.search-container .search-box{
+    position: absolute;
+ 
+}
+
+
+.search-container .search-box i{
+    position: absolute;
+    background: #F2F2F2;
+    padding: 18px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.search-container .search-box input{
+    position: absolute;
+    border: 1px solid #F2F2F2;
+    padding: 16px 23px;
+    border-right: none;
+    left: 46px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.search-container .search-input{
+    outline: none;
+}
+
+.search-container .button-search{
+    position: absolute;
+    left: 270px;
+    background-color: #0065FC ;
+    color: white;
+    border-radius: 0px 12px 12px 0px; 
+    border: none;
+    padding: 16px 22px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.filters {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .filters * {
+    display: inline-block;
+    margin: -5px;
+    padding-inline-start: 0px;
+  }
+
+  .filters label {
+    padding: 0.7rem 1rem 0.5rem 3rem;
+    margin: 0.25rem;
+    border-radius: 2rem;
+    border: 2px solid #F2F2F2;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-weight: 600;
+  }
+
+  .span-1{
+    font-weight: bold;
+  }
+
+  .span-2{
+      margin: 10px 0;
+  }
+
+  .filters li:hover label {
+    background: #F2F2F2;
+    
+    
+  }
+
+  .filters li:hover .fas {
+      background:#0065FC ;
+      color: white;
+      
+  }
+
+  .filters .fas {
+    padding: 12px;
+    background: #DEEBFF;
+    position: relative;
+    left: 45px;
+    border-radius: 50px;
+    color: #0065FC;
+  }
+
+  .filters .fas.fa-child{
+    padding: 13px 14px;
+    background: #DEEBFF;
+    position: relative;
+    left: 45px;
+    border-radius: 50px;
+    color: #0065FC;
+  }
+
+  .filters .fas.fa-heart{
+    padding: 13px 14px;
+    background: #DEEBFF;
+    position: relative;
+    left: 45px;
+    border-radius: 50px;
+    color: #0065FC;
+  }
+
+  .top-content{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 800px;
+      margin-top: 33px;
+  }
+
+  .title{
+      display: flex;
+  }
+
+  .title-2{
+      display: flex;
+      justify-content:space-between ;
+      align-items: center;
+  }
+
+  .fa-chart-line{
+      font-size: 30px;
+  }
+
+  .cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  #hebergements{
+      background-color: #F2F2F2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 60%;
+      padding: 3%;
+      border-radius: 12px;
+
+  }
+
+  .card{
+    flex: 0 1 31%;
+    background: white;
+    overflow: hidden;
+    height: 278px;
+    border-radius: 24px;
+    box-shadow: 1px 0px 12px rgba(0,0,0,0.2);
+    margin-bottom: 34px;
+
+  }
+
+  .card-infos{
+    margin-left: 11px;
+  }
+
+
+
+#hebergements img{
+    width: 96.5%;
+    height: 166px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 24px 24px 0 0;
+}
+
+
+
+.populaires{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 3%;
+    border-radius: 12px;
+    width: 25%;
+}
+
+.card1{
+    display: flex;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 1px 0px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.card1-info{
+    margin-top: 11px;
+    
+}
+
+
+.populaires img{
+    width: 47%;
+    height: 166px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 24px 0 0 24px;
+}
+
+#activites{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 80px;
+    align-content: space-around;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 1px 0px 12px rgba(0,0,0,0.2);
+    border-radius: 24px 24px 24px 24px;
+    margin: 16px;
+}
+
+.card2 img{
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 90%;
+}
+
+.card2:nth-child(2) img{
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 75%;
+}
+
+.card2:nth-child(3) img{
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 70%;
+}
+
+.card2:nth-child(5) img{
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 67%;
+}
+
+.card2:nth-child(6) img{
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 69%;
+}
+
+.card2:nth-child(1){
+    height: 100%;
+    width: 25%;
+}
+
+.card2:nth-child(2){
+    height: 46%;
+    width: 20%;
+}
+
+.card2:nth-child(3){
+    height: 36%;
+    width: 20%;
+}
+
+.card2:nth-child(4){
+    height: 100%;
+    width: 25%;
+}
+
+.card2:nth-child(5){
+    height: 45%;
+    width: 24%;
+}
+
+.card2:nth-child(6){
+    height: 40%;
+    width: 24%;
+}
+
+.card2 h4{
+    margin-left: 20px;
+}
+
+
+
+
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) {
-        .link {
-            float: inline-end;
-        }
 
-        #logo{
-            width: 19%;
-        
-        }
 
         .header{
-            padding-left: 6px;
-            padding-right: 6px;
+            display: flex;
+        }
+
+        .link{
+            align-self: center;
+        }
+
+        h1{
+            width: 100%;
+            font-size: xxx-large;
+        }
+
+        h3{
+            width: 100%;
+        }
+
+        .search-container{
+
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-content{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #hebergements{
+            display: flex;
+            flex-direction: column;
         }
      }
