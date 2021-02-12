@@ -763,7 +763,8 @@ footer{
      }
 
      @media only screen 
-    and (width : 375px) 
+    and (min-width : 375px)
+    and (max-width : 799px) 
     and (height : 667px) 
     and (-webkit-device-pixel-ratio : 2) { 
 
