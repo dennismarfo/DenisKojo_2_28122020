@@ -302,7 +302,6 @@ ul{
 
 .card{
   flex: 0 1 29%;  
-  background: white;
   overflow: hidden;
   height: 196px;
   border-radius: 24px;
@@ -369,7 +368,7 @@ ul{
 }    
 
 .populaires img{
-    width: 40%;
+    width: 125px;
     height: 132px;
     object-fit: cover;
     border: 5px solid white;
@@ -766,7 +765,7 @@ footer{
     and (min-width : 375px)
     and (max-width : 799px) 
     and (height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) { 
+                         { 
 
         .filters * {
             display: inline-block;
@@ -783,7 +782,6 @@ footer{
             margin: 23px;
             padding: 10px;
             display: flex;
-            flex-wrap: column;
             flex-wrap: wrap;
         }
 
